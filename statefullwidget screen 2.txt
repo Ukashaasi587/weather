@@ -1,0 +1,49 @@
+import 'package:flutter/material.dart';
+
+
+class screen2 extends StatefulWidget {
+
+
+  @override
+  State<screen2> createState() => _screen2State();
+}
+
+class _screen2State extends State<screen2> {
+  @override
+  void initState(){
+    print ('init called');
+    super.initState();
+  }
+  @override
+  void deactivate(){
+    print ('deactivate called');
+    super.deactivate();
+  }
+
+  Widget build(BuildContext context) {
+    print ('build called');
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor:Colors.blue,
+        title: Text('screen 2'),
+
+      ),
+      body: Center(
+        child: RaisedButton(
+          color: Colors.blue,
+          child: Text('go to farward to screen 1'),
+          onPressed: () {
+            Navigator.pop(context);
+
+          },
+
+        ),
+      ),
+
+    );
+  }
+
+
+
+}
+
