@@ -1,0 +1,36 @@
+import 'package:flutter/material.dart';
+class screen0 extends StatelessWidget {
+
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor:Colors.red,
+        title: Text('screen 0'),
+
+      ),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            RaisedButton(
+              color: Colors.red,
+              child: Text('go to sacreen 1'),
+              onPressed: (){
+                //Navigate to screen 1
+              },
+            ),
+            RaisedButton(
+              color: Colors.red,
+              child: Text('go to sacreen 2'),
+              onPressed: (){
+                //Navigate to screen 2
+              },
+            )
+          ],
+        ),
+
+      )
+    );
+  }
+}
